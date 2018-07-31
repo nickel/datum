@@ -1,0 +1,3 @@
+project=datum
+test=minitest
+template=erb
