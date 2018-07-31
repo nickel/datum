@@ -5,7 +5,8 @@ ENV app_folder /app
 RUN mkdir $app_folder
 WORKDIR $app_folder
 
-RUN apk add --no-cache ca-certificates libcurl libressl libxml2 libxslt postgresql-libs tzdata git
+RUN apk add --no-cache ca-certificates libcurl libressl libxml2 libxslt postgresql-libs \
+            postgresql-client tzdata git
 
 COPY Gemfile .
 COPY Gemfile.lock .
